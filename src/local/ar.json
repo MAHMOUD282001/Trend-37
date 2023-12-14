@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "about": "عننا",
+    "photography": " التصوير",
+    "printing": " الطباعة",
+    "designing": " التصميم",
+    "editing": " المونتاج",
+    "marketing": " التسويق",
+    "achievements": "انجازاتنا",
+    "contact": "تواصل معنا"
+  },
+
+  "hero": {
+    "heroHeadText": "مرحبًا بكم في شركة Trend 37",
+    "heroSubText": "نحن نقدم العديد من الخدمات أهمها:",
+    "services": {
+      "photography": " التصوير",
+      "printing": " الطباعة",
+      "designing": " التصميم",
+      "editing": " المونتاج",
+      "marketing": " التسويق"
+    }
+  },
+
+  "about": {
+    "aboutHeadText": "عننا",
+    "aboutdiscText": "نبذه عننا",
+    "aboutBody": {
+      "firstAboutBody": {
+        "firstAboutBodyHead": "رؤيتنا",
+        "firstAboutBodyBody": "أن نكون رائدين في مجال التسويق الإلكتروني، ونحقق التميز والابتكار في تقديم حلول فعالة ومستدامة لعملائنا."
+      },
+      "secondAboutBody": {
+        "secondAboutBodyHead": "رسالتنا",
+        "secondAboutBodyBody": "نسعى إلى دعم نجاح عملائنا من خلال توفير استراتيجيات تسويقية فعالة ومتقدمة تعزز تواجدهم الرقمي وتساهم في النمو المستدام لأعمالهم."
+      }
+    }
+  },
+
+  "photography": {
+    "photographyHeadText": "قسم التصوير",
+    "photographydiscText": "نوفر جميع خدمات التصوير",
+    "promoPhotography": "تصوير بروموهات",
+    "advertisingPhotography": "تصوير اعلانات",
+    "productPhotography": "تصوير منتجات",
+    "youtubeVideosPhotography": "تصوير فيديوهات يوتيوب",
+    "sessionsPhotography": "تصوير سيشنات",
+    "coursesPhotography": "تصوير كورسات"
+  },
+
+  "printing": {
+    "printingHeadText": "قسم الطباعه",
+    "printingdiscText": "نوفر جميع خدمات الطباعه",
+    "seasonalAdsPrinting": "طباعة الاعلانات الموسميه",
+    "paperAdsPrinting": "طباعة الإعلانات الورقية",
+    "bannerPrinting": "طباعة جميع انواع اليفط"
+  },
+
+  "designing": {
+    "designingHeadText": "قسم التصميم",
+    "designingdiscText": "نوفر جميع خدمات التصميم",
+    "socialDesign": "تصميم السوشيال",
+    "publicationsDesign": "تصميم المطبوعات",
+    "logoDesign": "تصميم اللوجوهات"
+  },
+
+  "editing": {
+    "editingHeadText": "قسم المونتاج",
+    "editingdiscText": "نوفر جميع خدمات المونتاج",
+    "youtubeVideosEditing": "مونتاج اليوتيوب",
+    "motionGraphics": "موشن جرافيك",
+    "promoEditing": "مونتاج البروموهات"
+  },
+  "marketing": {
+    "marketingHeadText": "قسم التسويق",
+    "marketingdiscText": "نوفر جميع خدمات التسويق",
+    "createAndManagePages": "انشاء وادارة الصفحات",
+    "websiteCreation": "انشاء المواقع الالكترونيه",
+    "developingMarketingPlans": "وضع خطط تسويقيه",
+    "realEstateMarketing": "التسويق العقارى",
+    "createPhonePrograms": "انشاء برامج الهاتف",
+    "createAdsCampaigns": "انشاء الحملات الاعلانيه"
+  },
+  "acheivements": {
+    "acheivementsHeadText": "انجازاتنا",
+    "acheivementsdiscText": "اليك جميع انجازاتنا",
+    "happyCustomer": "عميل سعيد",
+    "workTeam": "فريق العمل",
+    "completedProject": "مشروع مكتمل"
+  },
+
+  "addresses": {
+    "addressesHeadText": "العناوين",
+    "addressesdiscText": "اليك جميع العناوين الخاصه بنا",
+    "alexBranch": "فرع الإسكندرية : ٩٧ شارع عزيز فهمى - سيدى جابر",
+    "menofiaBranch": "فرع المنوفية : شارع بنها امام باتا - الباجور"
+  },
+
+  "contact": {
+    "contactHeadText": "تواصل معنا",
+    "contactdiscText": "ابقى على تواصل",
+    "alwaysStayInTouch": "كن دائما على تواصل معنا",
+    "companyName": "اسم الشركة",
+    "companyEmail": "الايميل",
+    "sendMsg": "ارسل رسالتك",
+    "name": "الاسم",
+    "msg": "الرساله",
+    "send": "ارسال",
+    "sending": "يتم الارسال"
+  },
+
+  "location": {
+    "locationHeadText": "موقعنا",
+    "locationDescText": "موقعنا على الخريطه"
+  },
+  
+  "footer": {
+    "websiteCreatedSentence": "تم انشاء الموقع بواسطه"
+  }
+}

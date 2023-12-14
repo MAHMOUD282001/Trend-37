@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif !important;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f4b517;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1a2035;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 2;
+}
+
+li {
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+}
+
+fieldset {
+  border-color: #6b7170 !important;
+}
+
+
+/* Hero Scroll To About */
+
+.scroll-ball {
+  animation: scrollBall 1s ease 1s infinite alternate;
+}
+
+@keyframes scrollBall {
+  0% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+/* Button */
+
+button.common-btn {
+  font-family: inherit;
+  display: inline-block;
+  padding: 10px 50px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: #0305ef;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+button.common-btn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #0305ef;
+  height: 150px;
+  width: 500px;
+  border-radius: 50%;
+}
+
+button.common-btn:hover {
+  color: #fff;
+}
+
+button.common-btn:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+button.common-btn:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+button.common-btn:active:before {
+  background: #0305ef;
+  transition: background 0s;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .swiper-button-prev, .swiper-button-next{
+    display: flex!important;
+  }
+}
+
+@media (min-width: 900px) {
+  #printing .swiper-wrapper, #designing .swiper-wrapper, #editing .swiper-wrapper {
+    display: flex;
+    justify-content: center!important;
+  }
+}
+

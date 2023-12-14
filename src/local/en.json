@@ -1,0 +1,117 @@
+﻿{
+  "nav": {
+    "about": "About",
+    "photography": "Photography",
+    "printing": "Printing",
+    "designing": "Designing",
+    "editing": "Editing",
+    "marketing": "Marketing",
+    "achievements": "Achievements",
+    "contact": "Contact"
+  },
+  "hero": {
+    "heroHeadText": "Welcome to Trend 37 Company",
+    "heroSubText": "We provide many services, the most important of which is:",
+    "services": {
+      "photography": "Photography",
+      "printing": "Printing",
+      "designing": "Designing",
+      "editing": "Editing",
+      "marketing": "Marketing"
+    }
+  },
+
+  "about": {
+    "aboutHeadText": "About",
+    "aboutdiscText": "More info about us",
+    "aboutBody": {
+      "firstAboutBody": {
+        "firstAboutBodyHead": "Our vision",
+        "firstAboutBodyBody": "To be a pioneer in the field of electronic marketing, achieving excellence and innovation in providing effective and sustainable solutions to our customers."
+      },
+      "secondAboutBody": {
+        "secondAboutBodyHead": "Our Message",
+        "secondAboutBodyBody": "We seek to support our clients’ success by providing effective and advanced marketing strategies that enhance their digital presence and contribute to the sustainable growth of their business."
+      }
+    }
+  },
+
+  "photography": {
+    "photographyHeadText": "Photography",
+    "photographydiscText": "We provide all photography services",
+    "promoPhotography": "Promo Photography",
+    "advertisingPhotography": "Advertising Photography",
+    "productPhotography": "Product Photography",
+    "youtubeVideosPhotography": "Youtube Videos",
+    "sessionsPhotography": "Sessions Photography",
+    "coursesPhotography": "Courses Photography"
+  },
+
+  "printing": {
+    "printingHeadText": "Printing",
+    "printingdiscText": "We provide all printing services",
+    "seasonalAdsPrinting": "Seasonal Ads Printing",
+    "paperAdsPrinting": "Paper Ads Printing",
+    "bannerPrinting": "Banner Printing"
+  },
+
+  "designing": {
+    "designingHeadText": "Designing",
+    "designingdiscText": "We provide all editing services",
+    "socialDesign": "Social Design",
+    "publicationsDesign": "Publications Design",
+    "logoDesign": "Logo Design"
+  },
+
+  "editing": {
+    "editingHeadText": "Editing",
+    "editingdiscText": "We provide all editing services",
+    "youtubeVideosEditing": "YouTube videos editing",
+    "motionGraphics": "Motion graphics",
+    "promoEditing": "Promo editing"
+  },
+  "marketing": {
+    "marketingHeadText": "Marketing",
+    "marketingdiscText": "We provide all marketing services",
+    "createAndManagePages": "Create and manage pages",
+    "websiteCreation": "Creating websites",
+    "developingMarketingPlans": "Developing marketing plans",
+    "realEstateMarketing": "Real Estate Marketing",
+    "createPhonePrograms": "Create phone programs",
+    "createAdsCampaigns": "Create ads campaigns"
+  },
+
+  "acheivements": {
+    "acheivementsHeadText": "Our Acheivements",
+    "acheivementsdiscText": "Here are all our achievements",
+    "happyCustomer": "Happy customer",
+    "workTeam": "Work team",
+    "completedProject": "Completed project"
+  },
+
+  "addresses": {
+    "addressesHeadText": "Addresses",
+    "addressesdiscText": "Here are all our addresses",
+    "alexBranch": "Alexandria Branch: 97 Aziz Fahmy Street - Sidi Gaber",
+    "menofiaBranch": "Meneofia Branch: Banha Street in front of Bata - Al-Bajour"
+  },
+
+  "contact": {
+    "contactHeadText": "Contact us",
+    "contactdiscText": "Stay in touch",
+    "alwaysStayInTouch": "Always stay in touch with us",
+    "companyName": "Company Name",
+    "companyEmail": "Email",
+    "sendMsg": "Send your message",
+    "name": "name",
+    "msg": "message",
+    "send": "Send",
+    "sending": "Sending"
+  },
+
+  "location": {
+    "locationHeadText": "Our Location",
+    "locationDescText": "Our location on Maps"
+  },
+  "footer": { "websiteCreatedSentence": "Website created by" }
+}

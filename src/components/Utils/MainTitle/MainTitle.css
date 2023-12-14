@@ -1,0 +1,16 @@
+.main-text span {
+  margin-top: 20px;
+
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 27px 0;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.main-text span:after,
+.main-text span:before {
+  content: " ";
+  display: block;
+  height: 5px;
+}
