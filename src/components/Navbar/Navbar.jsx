@@ -55,7 +55,6 @@ function Navbar({ setMode }) {
               cursor: "pointer",
             }}
             onClick={() => {
-              setActive("");
               window.scrollTo(0, 0);
             }}
           >
@@ -68,13 +67,7 @@ function Navbar({ setMode }) {
                 <li
                   key={navLink.id}
                   style={{
-                    color:
-                      active === navLink.title
-                        ? theme.palette.primary.main
-                        : scrolled
-                        ? theme.palette.secondary.main
-                        : "#fff",
-
+                    color: scrolled ? theme.palette.secondary.main : "#fff",
                     marginRight: lang === "ar" ? "20px" : "0",
                     marginLeft: lang === "en" ? "20px" : "0",
                     fontSize: "18px",
@@ -90,8 +83,6 @@ function Navbar({ setMode }) {
                     duration={100}
                     style={{ cursor: "pointer" }}
                   >
-                    {/* {navLink.title} */}
-
                     {t([`nav.${navLink.languageDescription}`])}
                   </Link>
                 </li>
@@ -175,7 +166,9 @@ function Navbar({ setMode }) {
             {toggle ? (
               <Close
                 sx={{
-                  color: scrolled ? theme.palette.secondary.main : "#fff",
+                  color: scrolled
+                    ? theme.palette.secondary.main
+                    : theme.palette.secondary.main,
                   fontSize: "30px",
                 }}
                 onClick={() => setToggle(!toggle)}
@@ -226,7 +219,6 @@ function Navbar({ setMode }) {
                   }}
                   onClick={() => {
                     setToggle(!toggle);
-                    setActive(navLink.title);
                   }}
                 >
                   <Link
@@ -238,7 +230,7 @@ function Navbar({ setMode }) {
                     duration={100}
                     style={{ cursor: "pointer" }}
                   >
-                    {navLink.title}
+                    {t([`nav.${navLink.languageDescription}`])}
                   </Link>
                 </li>
               ))}
