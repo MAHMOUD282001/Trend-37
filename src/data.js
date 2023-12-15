@@ -1,100 +1,138 @@
-import heroImg1 from "./assets/hero-1.webp";
-import heroImg2 from "./assets/hero-2.webp";
-import heroImg3 from "./assets/hero-3.webp";
-import heroImg4 from "./assets/hero-4.webp";
-import heroImg5 from "./assets/hero-5.webp";
+//Big Screen Slides Images
+import bigHeroImg1 from "./assets/big-hero-1.webp";
+import bigHeroImg2 from "./assets/big-hero-2.webp";
+import bigHeroImg3 from "./assets/big-hero-3.webp";
+import bigHeroImg4 from "./assets/big-hero-4.webp";
+import bigHeroImg5 from "./assets/big-hero-5.webp";
+
+//Small Screen Slides Images
+import smallHeroImg1 from "./assets/small-hero-1.webp";
+import smallHeroImg2 from "./assets/small-hero-2.webp";
+import smallHeroImg3 from "./assets/small-hero-3.webp";
+import smallHeroImg4 from "./assets/small-hero-4.webp";
+import smallHeroImg5 from "./assets/small-hero-5.webp";
 
 import cardImg from "./assets/photography-1.jpg";
 
 export const navLinks = [
   {
     id: "about",
-    title: "عننا",
+    languageDescription: "about",
   },
   {
     id: "photography",
-    title: "التصوير",
+    languageDescription: "photography",
   },
   {
     id: "printing",
-    title: "الطباعة",
+    languageDescription: "printing",
   },
   {
     id: "designing",
-    title: "التصميم",
+    languageDescription: "designing",
   },
   {
     id: "editing",
-    title: "المونتاج",
+    languageDescription: "editing",
   },
   {
     id: "marketing",
-    title: "التسويق",
+    languageDescription: "marketing",
   },
   {
     id: "contact",
-    title: "تواصل معنا",
+    languageDescription: "contact",
   },
 ];
 
-export const slides = [
+export const bigScreenSlides = [
   {
-    img: heroImg1,
+    img: bigHeroImg1,
     heading: "مرحبا بكم فى شركة TREND 37",
-    body: "photography",
+    languageDescription: "photography",
   },
 
   {
-    img: heroImg2,
+    img: bigHeroImg2,
     heading: "مرحبا بكم فى شركة TREND 37",
-    body: "printing",
+    languageDescription: "editing",
   },
 
   {
-    img: heroImg3,
+    img: bigHeroImg3,
     heading: "مرحبا بكم فى شركة TREND 37",
-    body: "designing",
+    languageDescription: "marketing",
   },
   {
-    img: heroImg4,
+    img: bigHeroImg4,
     heading: "مرحبا بكم فى شركة TREND 37",
-    body: "editing",
+    languageDescription: "printing",
   },
   {
-    img: heroImg5,
+    img: bigHeroImg5,
     heading: "مرحبا بكم فى شركة TREND 37",
-    body: "marketing",
+    languageDescription: "designing",
+  },
+];
+
+export const smallScreenSlides = [
+  {
+    img: smallHeroImg1,
+    heading: "مرحبا بكم فى شركة TREND 37",
+    languageDescription: "photography",
+  },
+
+  {
+    img: smallHeroImg2,
+    heading: "مرحبا بكم فى شركة TREND 37",
+    languageDescription: "editing",
+  },
+
+  {
+    img: smallHeroImg3,
+    heading: "مرحبا بكم فى شركة TREND 37",
+    languageDescription: "marketing",
+  },
+  {
+    img: smallHeroImg4,
+    heading: "مرحبا بكم فى شركة TREND 37",
+    languageDescription: "printing",
+  },
+  {
+    img: smallHeroImg5,
+    heading: "مرحبا بكم فى شركة TREND 37",
+    languageDescription: "designing",
   },
 ];
 
 export const photography = [
   {
-    title: "promoPhotography",
+    languageDescription: "promoPhotography",
     img: cardImg,
     dataAosDelay: "0",
   },
   {
-    title: "advertisingPhotography",
+    languageDescription: "advertisingPhotography",
     img: cardImg,
     dataAosDelay: "200",
   },
   {
-    title: "productPhotography",
+    languageDescription: "productPhotography",
     img: cardImg,
     dataAosDelay: "400",
   },
   {
-    title: "youtubeVideosPhotography",
+    languageDescription: "youtubeVideosPhotography",
     img: cardImg,
     dataAosDelay: "600",
   },
   {
-    title: "sessionsPhotography",
+    languageDescription: "sessionsPhotography",
     img: cardImg,
     dataAosDelay: "800",
   },
   {
-    title: "coursesPhotography",
+    languageDescription: "coursesPhotography",
     img: cardImg,
     dataAosDelay: "1000",
   },
@@ -102,17 +140,17 @@ export const photography = [
 
 export const printing = [
   {
-    title: "seasonalAdsPrinting",
+    languageDescription: "seasonalAdsPrinting",
     img: cardImg,
     dataAosDelay: "0",
   },
   {
-    title: "paperAdsPrinting",
+    languageDescription: "paperAdsPrinting",
     img: cardImg,
     dataAosDelay: "200",
   },
   {
-    title: "bannerPrinting",
+    languageDescription: "bannerPrinting",
     img: cardImg,
     dataAosDelay: "400",
   },
@@ -120,17 +158,17 @@ export const printing = [
 
 export const designing = [
   {
-    title: "socialDesign",
+    languageDescription: "socialDesign",
     img: cardImg,
     dataAosDelay: "0",
   },
   {
-    title: "publicationsDesign",
+    languageDescription: "publicationsDesign",
     img: cardImg,
     dataAosDelay: "200",
   },
   {
-    title: "logoDesign",
+    languageDescription: "logoDesign",
     img: cardImg,
     dataAosDelay: "400",
   },
@@ -138,17 +176,17 @@ export const designing = [
 
 export const editing = [
   {
-    title: "youtubeVideosEditing",
+    languageDescription: "youtubeVideosEditing",
     img: cardImg,
     dataAosDelay: "0",
   },
   {
-    title: "motionGraphics",
+    languageDescription: "motionGraphics",
     img: cardImg,
     dataAosDelay: "200",
   },
   {
-    title: "promoEditing",
+    languageDescription: "promoEditing",
     img: cardImg,
     dataAosDelay: "400",
   },
@@ -156,32 +194,32 @@ export const editing = [
 
 export const marketing = [
   {
-    title: "createAndManagePages",
+    languageDescription: "createAndManagePages",
     img: cardImg,
     dataAosDelay: "0",
   },
   {
-    title: "websiteCreation",
+    languageDescription: "websiteCreation",
     img: cardImg,
     dataAosDelay: "200",
   },
   {
-    title: "developingMarketingPlans",
+    languageDescription: "developingMarketingPlans",
     img: cardImg,
     dataAosDelay: "400",
   },
   {
-    title: "realEstateMarketing",
+    languageDescription: "realEstateMarketing",
     img: cardImg,
     dataAosDelay: "600",
   },
   {
-    title: "createPhonePrograms",
+    languageDescription: "createPhonePrograms",
     img: cardImg,
     dataAosDelay: "800",
   },
   {
-    title: "createAdsCampaigns",
+    languageDescription: "createAdsCampaigns",
     img: cardImg,
     dataAosDelay: "1000",
   },
@@ -189,17 +227,17 @@ export const marketing = [
 
 export const achievements = [
   {
-    title: "happyCustomer",
+    languageDescription: "happyCustomer",
     count: 20,
     dataAosDelay: "0",
   },
   {
-    title: "workTeam",
+    languageDescription: "workTeam",
     count: 10,
     dataAosDelay: "200",
   },
   {
-    title: "completedProject",
+    languageDescription: "completedProject",
     count: 50,
     dataAosDelay: "400",
   },

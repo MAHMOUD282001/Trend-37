@@ -10,7 +10,7 @@ import { photography } from "../../data";
 import { useTranslation } from "react-i18next";
 
 function Photography() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   
   return (
     <Box id="photography" sx={{ overflow: "hidden" }}>

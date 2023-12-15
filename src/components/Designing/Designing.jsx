@@ -6,7 +6,7 @@ import CommonSlider from "../Utils/CommonSlider/CommonSlider";
 import { useTranslation } from "react-i18next";
 
 function Designing() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <Box id="designing" sx={{ overflow: "hidden" }}>

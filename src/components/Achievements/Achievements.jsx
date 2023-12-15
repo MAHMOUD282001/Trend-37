@@ -62,7 +62,7 @@ function Achievements() {
                   variant="sectionSubText"
                   sx={{ color: theme.palette.secondary.main }}
                 >
-                  {t([`acheivements.${item.title}`])}
+                  {t([`acheivements.${item.languageDescription}`])}
                 </Typography>
               </Box>
             ))}

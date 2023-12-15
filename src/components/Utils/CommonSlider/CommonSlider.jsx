@@ -2,26 +2,11 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import CommonCard from "../CommonCard/CommonCard";
-import { useTheme } from "@mui/material";
-import { useTranslation } from "react-i18next";
+import CommonSliderLogic from "./CommonSliderLogic";
+
 
 function CommonSlider({ dataName, data, isArrowsDisplay }) {
-  let theme = useTheme();
-
-  const params = {
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  };
-
-  const arrowStyles = {
-    display: isArrowsDisplay ? "flex" : "none",
-    border: `1px solid ${theme.palette.fourtiary.main}`,
-    color: theme.palette.fourtiary.main,
-  };
-  
-  const { t, i18n } = useTranslation();
+  let [theme, params, arrowStyles, t] = CommonSliderLogic(isArrowsDisplay)
   
   return (
     <Swiper
@@ -70,7 +55,7 @@ function CommonSlider({ dataName, data, isArrowsDisplay }) {
           style={{ display: "flex", justifyContent: "center" }}
         >
           <CommonCard
-            name={t([`${dataName}.${item.title}`])}
+            name={t([`${dataName}.${item.languageDescription}`])}
             img={item.img}
             dataAosDelay={item.dataAosDelay}
           />

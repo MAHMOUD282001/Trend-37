@@ -4,7 +4,7 @@ import MainTitle from "../Utils/MainTitle/MainTitle";
 import { useTranslation } from "react-i18next";
 
 function Location() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   
   return (
     <Box>

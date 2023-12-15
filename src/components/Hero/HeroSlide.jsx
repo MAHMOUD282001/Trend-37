@@ -1,9 +1,7 @@
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "./HeroSlider.css";
 import { Box, Container, Typography, useTheme } from "@mui/material";
-import { useEffect, useState } from "react";
 import Typed from "react-typed";
 import { useTranslation } from "react-i18next";
 

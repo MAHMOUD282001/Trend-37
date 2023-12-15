@@ -1,121 +1,31 @@
-import { useTheme } from "@emotion/react";
 import { Box, Container, Grid, Typography, TextField } from "@mui/material";
-import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
-import { toast } from "react-toastify";
+
 import MainTitle from "../Utils/MainTitle/MainTitle";
 import {
   Email,
   Facebook,
   Instagram,
   LinkedIn,
-  LocationOn,
   People,
-  VisibilityOutlined,
 } from "@mui/icons-material";
-import { useTranslation } from "react-i18next";
+import ContactLogic from "./ContactLogic";
 
 function Contact() {
-  let theme = useTheme();
-  const formRef = useRef();
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const [loading, setLoading] = useState(false);
-
-  const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
-
-    setForm({
-      ...form,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
-
-    emailjs
-      .send(
-        "service_wb3gfsj",
-        "template_cbkk7mq",
-        {
-          from_name: form.name,
-          to_name: "Trend 37",
-          from_email: form.email,
-          to_email: "trendx37@gmail.com",
-          message: form.message,
-        },
-        "BA3_-0MFDiY926h_W"
-      )
-      .then(
-        () => {
-          setLoading(false);
-          toast.success("شكرًا لك. سأعود إليك في أقرب وقت ممكن.");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          toast.error("آه، حدث خطأ ما. يرجى المحاولة مرة أخرى.");
-        }
-      );
-  };
-
-  //Button Style
-
-  const [isHovered, setIsHovered] = useState(false);
-
-  const buttonStyles = {
-    fontFamily: "inherit",
-    display: "inline-block",
-    padding: "10px 50px",
-    position: "relative",
-    overflow: "hidden",
-    border: "2px solid var(--color)",
-    transition: "color 0.5s",
-    zIndex: 1,
-    fontSize: "17px",
-    borderRadius: "6px",
-    fontWeight: 500,
-    color: isHovered ? "#fff" : theme.palette.fourtiary.main,
-    backgroundColor: "#fff",
-    border: `1px solid ${theme.palette.fourtiary.main}`,
-    cursor: "pointer",
-    position: "relative",
-  };
-
-  const beforeStyles = {
-    content: "",
-    position: "absolute",
-    zIndex: -1,
-    background: theme.palette.fourtiary.main,
-    height: "150px",
-    width: "500px",
-    borderRadius: "50%",
-    top: isHovered ? "-30px" : "100%",
-    left: isHovered ? "-30px" : "100%",
-    transition: "all 0.7s",
-  };
-
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
-
-  const { t, i18n } = useTranslation();
+  
+  let [
+    theme,
+    formRef,
+    form,
+    loading,
+    handleInputChange,
+    handleFormSubmit,
+    buttonStyles,
+    beforeStyles,
+    handleMouseEnter,
+    handleMouseLeave,
+    t,
+    i18n,
+  ] = ContactLogic()
 
   return (
     <Box id="contact" sx={{ overflow: "hidden" }}>
@@ -183,7 +93,7 @@ function Contact() {
                       variant="sectionSubText"
                       sx={{ color: theme.palette.secondary.main }}
                     >
-                      {t([`contact.CompanyEmail`])}
+                      {t([`contact.companyEmail`])}
                     </Typography>
                     <Typography
                       variant="sectionSubSubText"
@@ -300,7 +210,7 @@ function Contact() {
                 {t([`contact.sendMsg`])}
               </Typography>
             </Box>
-            <form onSubmit={handleSubmit} ref={formRef}>
+            <form onSubmit={handleFormSubmit} ref={formRef}>
               <TextField
                 margin="normal"
                 variant="outlined"
@@ -311,7 +221,7 @@ function Contact() {
                 name="name"
                 autoComplete="name"
                 value={form.name}
-                onChange={handleChange}
+                onChange={handleInputChange}
                 InputLabelProps={{
                   style: {
                     color: theme.palette.secondary.main,
@@ -333,7 +243,7 @@ function Contact() {
                 name="email"
                 autoComplete="email"
                 value={form.email}
-                onChange={handleChange}
+                onChange={handleInputChange}
                 InputLabelProps={{
                   style: {
                     color: theme.palette.secondary.main,
@@ -357,7 +267,7 @@ function Contact() {
                 multiline
                 rows={4}
                 value={form.message}
-                onChange={handleChange}
+                onChange={handleInputChange}
                 InputLabelProps={{
                   style: {
                     color: theme.palette.secondary.main,
