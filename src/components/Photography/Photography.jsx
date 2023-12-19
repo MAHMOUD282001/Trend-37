@@ -24,6 +24,7 @@ function Photography() {
           dataName="photography"
           data={photography}
           isArrowsDisplay={true}
+          hasName={true}
         />
       </Container>
     </Box>

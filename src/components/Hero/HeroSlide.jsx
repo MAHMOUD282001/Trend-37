@@ -12,7 +12,7 @@ function HeroSlide({ img, heading, body }) {
   return (
     <>
       <div className="slider-overlay"></div>
-      <img src={img} loading="lazy" alt="hero img" />
+      <img src={img} alt="hero img" />
       <Box
         sx={{
           position: "absolute",
@@ -38,7 +38,10 @@ function HeroSlide({ img, heading, body }) {
                 {t([`hero.heroHeadText`])}
               </Typography>
 
-              <Typography variant="heroSubText" sx={{ mt: { md: 3, xs: 1 }, direction: i18n.dir() }}>
+              <Typography
+                variant="heroSubText"
+                sx={{ mt: { md: 3, xs: 1 }, direction: i18n.dir() }}
+              >
                 {t([`hero.heroSubText`])}{" "}
                 <Typed
                   strings={[t([`hero.services.${body}`])]}

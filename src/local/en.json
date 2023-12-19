@@ -39,19 +39,21 @@
   "photography": {
     "photographyHeadText": "Photography",
     "photographydiscText": "We provide all photography services",
-    "promoPhotography": "Promo Photography",
+    "partiesPhotography": "Parties Photography",
     "advertisingPhotography": "Advertising Photography",
     "productPhotography": "Product Photography",
     "youtubeVideosPhotography": "Youtube Videos",
     "sessionsPhotography": "Sessions Photography",
-    "coursesPhotography": "Courses Photography"
+    "coursesPhotography": "Courses Photography",
+    "conferencePhotography": "Conference Photography",
+    "programsPhotography": "Programs Photography"
   },
 
   "printing": {
     "printingHeadText": "Printing",
     "printingdiscText": "We provide all printing services",
-    "seasonalAdsPrinting": "Seasonal Ads Printing",
-    "paperAdsPrinting": "Paper Ads Printing",
+    "flyersAndBrochuresPrinting": "Flyer and Brochure Printing",
+    "personalCardsPrinting": "Personal Cards Printing",
     "bannerPrinting": "Banner Printing"
   },
 
@@ -66,7 +68,7 @@
   "editing": {
     "editingHeadText": "Editing",
     "editingdiscText": "We provide all editing services",
-    "youtubeVideosEditing": "YouTube videos editing",
+    "advertisementEditing": "Advertisement Editing",
     "motionGraphics": "Motion graphics",
     "promoEditing": "Promo editing"
   },
@@ -79,6 +81,11 @@
     "realEstateMarketing": "Real Estate Marketing",
     "createPhonePrograms": "Create phone programs",
     "createAdsCampaigns": "Create ads campaigns"
+  },
+
+  "successPartners": {
+    "successPartnersHeadText": "Success Partners",
+    "successPartnersdiscText": "All the partners of our successes"
   },
 
   "acheivements": {

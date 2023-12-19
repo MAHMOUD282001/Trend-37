@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 function ContactLogic() {
   let theme = useTheme();
   const formRef = useRef();
+  const { t, i18n } = useTranslation();
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -47,7 +48,11 @@ function ContactLogic() {
       .then(
         () => {
           setLoading(false);
-          toast.success("شكرًا لك. سأعود إليك في أقرب وقت ممكن.");
+          toast.success(
+            i18n.language === "ar"
+              ? "تم ارسال الرساله بنجاح"
+              : "Message Sent Successfully"
+          );
 
           setForm({
             name: "",
@@ -57,7 +62,11 @@ function ContactLogic() {
         },
         (error) => {
           setLoading(false);
-          toast.error("آه، حدث خطأ ما. يرجى المحاولة مرة أخرى.");
+          toast.error(
+            i18n.language === "ar"
+              ? "حدث خطأ اثناء ارسال الرساله"
+              : "An Error Occurred While Sending The Message"
+          );
         }
       );
   };
@@ -104,8 +113,6 @@ function ContactLogic() {
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
-
-  const { t, i18n } = useTranslation();
 
   return [
     theme,

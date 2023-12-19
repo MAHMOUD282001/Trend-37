@@ -16,7 +16,12 @@ function Designing() {
           subTitle={t([`designing.designingdiscText`])}
         />
 
-        <CommonSlider dataName={"designing"} data={designing} isArrowsDisplay={false} />
+        <CommonSlider
+          dataName={"designing"}
+          data={designing}
+          isArrowsDisplay={false}
+          hasName={true}
+        />
       </Container>
     </Box>
   );

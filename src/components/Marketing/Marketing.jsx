@@ -16,7 +16,12 @@ function Marketing() {
           subTitle={t([`marketing.marketingdiscText`])}
         />
 
-        <CommonSlider dataName={"marketing"} data={marketing} isArrowsDisplay={true} />
+        <CommonSlider
+          dataName={"marketing"}
+          data={marketing}
+          isArrowsDisplay={false}
+          hasName={true}
+        />
       </Container>
     </Box>
   );

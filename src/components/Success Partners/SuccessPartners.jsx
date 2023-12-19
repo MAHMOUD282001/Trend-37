@@ -1,30 +1,29 @@
 import { Box, Container, Grid, useTheme } from "@mui/material";
 import React from "react";
 import MainTitle from "../Utils/MainTitle/MainTitle";
-import { editing } from "../../data";
+import { partners } from "../../data";
 import CommonSlider from "../Utils/CommonSlider/CommonSlider";
 import { useTranslation } from "react-i18next";
 
-function Editing() {
+function SuccessPartners() {
   const { t } = useTranslation();
 
   return (
-    <Box id="editing" sx={{ overflow: "hidden" }}>
+    <Box id="succeess-partners" sx={{ overflow: "hidden" }}>
       <Container>
         <MainTitle
-          title={t([`editing.editingHeadText`])}
-          subTitle={t([`editing.editingdiscText`])}
+          title={t([`successPartners.successPartnersHeadText`])}
+          subTitle={t([`successPartners.successPartnersdiscText`])}
         />
 
         <CommonSlider
-          dataName={"editing"}
-          data={editing}
+          data={partners}
           isArrowsDisplay={false}
-          hasName={true}
+          hasName={false}
         />
       </Container>
     </Box>
   );
 }
 
-export default Editing;
+export default SuccessPartners;

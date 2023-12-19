@@ -5,7 +5,7 @@ import CommonCard from "../CommonCard/CommonCard";
 import CommonSliderLogic from "./CommonSliderLogic";
 
 
-function CommonSlider({ dataName, data, isArrowsDisplay }) {
+function CommonSlider({ dataName, data, isArrowsDisplay, hasName }) {
   let [theme, params, arrowStyles, t] = CommonSliderLogic(isArrowsDisplay)
   
   return (
@@ -57,7 +57,7 @@ function CommonSlider({ dataName, data, isArrowsDisplay }) {
           <CommonCard
             name={t([`${dataName}.${item.languageDescription}`])}
             img={item.img}
-            dataAosDelay={item.dataAosDelay}
+            hasName={hasName}
           />
         </SwiperSlide>
       ))}

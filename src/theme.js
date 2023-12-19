@@ -17,7 +17,7 @@ export const getDesignTokens = (mode) => ({
     },
     heroSubText: {
       fontWeight: "500",
-      color: "#f3f3f3",
+      color: "#fff",
       fontSize: "16px",
       lineHeight: "30px",
       display: "block",
@@ -30,7 +30,7 @@ export const getDesignTokens = (mode) => ({
       },
     },
     sectionHeadText: {
-      color: "#f3f3f3",
+      color: "#fff",
       fontSize: "30px",
       margin: "60px 0 30px 0",
       textAlign: "center",
@@ -50,7 +50,7 @@ export const getDesignTokens = (mode) => ({
     },
     sectionSubText: {
       fontWeight: "normal",
-      color: "#f3f3f3",
+      color: "#fff",
       display: "block",
       fontSize: "20px",
       lineHeight: "40px",
@@ -62,7 +62,7 @@ export const getDesignTokens = (mode) => ({
 
     sectionSubSubText: {
       fontWeight: "normal",
-      color: "#f3f3f3",
+      color: "#fff",
       display: "block",
       fontSize: "14px",
       lineHeight: "35px",

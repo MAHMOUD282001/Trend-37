@@ -18,6 +18,7 @@ import Marketing from "./components/Marketing/Marketing";
 import Branches from "./components/Branches/Branches";
 import Location from "./components/Location/Location";
 import { useTranslation } from "react-i18next";
+import SuccessPartners from "./components/Success Partners/SuccessPartners";
 
 function App() {
   //Initialize Aos
@@ -58,6 +59,7 @@ function App() {
         <Designing />
         <Editing />
         <Marketing />
+        <SuccessPartners />
         <Achievements />
         <Branches />
         <Contact />

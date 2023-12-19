@@ -53,7 +53,6 @@ fieldset {
   border-color: #6b7170 !important;
 }
 
-
 /* Hero Scroll To About */
 
 .scroll-ball {
@@ -120,15 +119,18 @@ button.common-btn:active:before {
 }
 
 @media (max-width: 900px) {
-  .swiper-button-prev, .swiper-button-next{
-    display: flex!important;
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: flex !important;
   }
 }
 
 @media (min-width: 900px) {
-  #printing .swiper-wrapper, #designing .swiper-wrapper, #editing .swiper-wrapper {
+  #printing .swiper-wrapper,
+  #designing .swiper-wrapper,
+  #editing .swiper-wrapper,
+  #marketing .swiper-wrapper{
     display: flex;
-    justify-content: center!important;
+    justify-content: center !important;
   }
 }
-

@@ -1,4 +1,8 @@
-import { bigScreenSlides, smallScreenSlides } from "../../../data";
+import {
+  bigScreenSlides,
+  midScreenSlides,
+  smallScreenSlides,
+} from "../../../data";
 import { useTheme } from "@emotion/react";
 import { useEffect, useState } from "react";
 
@@ -25,8 +29,10 @@ function HeroSliderLogic() {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 700) {
+      if (window.innerWidth <= 450) {
         setUpdatedSlides(smallScreenSlides);
+      } else if (window.innerWidth <= 700) {
+        setUpdatedSlides(midScreenSlides);
       } else {
         setUpdatedSlides(bigScreenSlides);
       }

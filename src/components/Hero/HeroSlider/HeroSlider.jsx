@@ -3,7 +3,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./HeroSlider.css";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import HeroSlide from "../HeroSlide";
 import { Box } from "@mui/material";
 import HeroSliderLogic from "./HeroSliderLogic";

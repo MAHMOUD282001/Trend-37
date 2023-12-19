@@ -40,19 +40,21 @@
   "photography": {
     "photographyHeadText": "قسم التصوير",
     "photographydiscText": "نوفر جميع خدمات التصوير",
-    "promoPhotography": "تصوير بروموهات",
+    "partiesPhotography": "تصوير حفلات",
     "advertisingPhotography": "تصوير اعلانات",
     "productPhotography": "تصوير منتجات",
     "youtubeVideosPhotography": "تصوير فيديوهات يوتيوب",
     "sessionsPhotography": "تصوير سيشنات",
-    "coursesPhotography": "تصوير كورسات"
+    "coursesPhotography": "تصوير كورسات",
+    "conferencePhotography": "تصوير مؤتمرات",
+    "programsPhotography": "تصوير برامج"
   },
 
   "printing": {
     "printingHeadText": "قسم الطباعه",
     "printingdiscText": "نوفر جميع خدمات الطباعه",
-    "seasonalAdsPrinting": "طباعة الاعلانات الموسميه",
-    "paperAdsPrinting": "طباعة الإعلانات الورقية",
+    "flyersAndBrochuresPrinting": "طباعة الفلاير والبروشور",
+    "personalCardsPrinting": "طباعة الكروت الشخصيه",
     "bannerPrinting": "طباعة جميع انواع اليفط"
   },
 
@@ -67,7 +69,7 @@
   "editing": {
     "editingHeadText": "قسم المونتاج",
     "editingdiscText": "نوفر جميع خدمات المونتاج",
-    "youtubeVideosEditing": "مونتاج اليوتيوب",
+    "advertisementEditing": "مونتاج الاعلانات",
     "motionGraphics": "موشن جرافيك",
     "promoEditing": "مونتاج البروموهات"
   },
@@ -81,6 +83,12 @@
     "createPhonePrograms": "انشاء برامج الهاتف",
     "createAdsCampaigns": "انشاء الحملات الاعلانيه"
   },
+  
+  "successPartners": {
+    "successPartnersHeadText": "شركاء النجاح",
+    "successPartnersdiscText": "اليك جميع شركاء نجاحاتنا"
+  },
+  
   "acheivements": {
     "acheivementsHeadText": "انجازاتنا",
     "acheivementsdiscText": "اليك جميع انجازاتنا",

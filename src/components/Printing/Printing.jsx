@@ -7,14 +7,21 @@ import { useTranslation } from "react-i18next";
 
 function Printing() {
   const { t } = useTranslation();
-  
+
   return (
     <Box id="printing" sx={{ overflow: "hidden" }}>
       <Container>
-        <MainTitle title={t([`printing.printingHeadText`])}
-          subTitle={t([`printing.printingdiscText`])} />
+        <MainTitle
+          title={t([`printing.printingHeadText`])}
+          subTitle={t([`printing.printingdiscText`])}
+        />
 
-        <CommonSlider dataName={"printing"} data={printing} isArrowsDisplay={false}/>
+        <CommonSlider
+          dataName={"printing"}
+          data={printing}
+          isArrowsDisplay={false}
+          hasName={true}
+        />
       </Container>
     </Box>
   );
