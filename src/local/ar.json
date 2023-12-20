@@ -47,14 +47,14 @@
     "sessionsPhotography": "تصوير سيشنات",
     "coursesPhotography": "تصوير كورسات",
     "conferencePhotography": "تصوير مؤتمرات",
-    "programsPhotography": "تصوير برامج"
+    "talkShowPhotography": "تصوير برامج تليفزيونيه"
   },
 
   "printing": {
     "printingHeadText": "قسم الطباعه",
     "printingdiscText": "نوفر جميع خدمات الطباعه",
     "flyersAndBrochuresPrinting": "طباعة الفلاير والبروشور",
-    "personalCardsPrinting": "طباعة الكروت الشخصيه",
+    "businessCardsPrinting": "طباعة الكروت الشخصيه",
     "bannerPrinting": "طباعة جميع انواع اليفط"
   },
 
@@ -86,7 +86,7 @@
   
   "successPartners": {
     "successPartnersHeadText": "شركاء النجاح",
-    "successPartnersdiscText": "اليك جميع شركاء نجاحاتنا"
+    "successPartnersdiscText": "اليك جزء من شركاء نجاحاتنا"
   },
   
   "acheivements": {
@@ -110,6 +110,7 @@
     "alwaysStayInTouch": "كن دائما على تواصل معنا",
     "companyName": "اسم الشركة",
     "companyEmail": "الايميل",
+    "companyPhones": "ارقام التليفون",
     "sendMsg": "ارسل رسالتك",
     "name": "الاسم",
     "msg": "الرساله",

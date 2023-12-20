@@ -29,14 +29,18 @@ function Navbar({ setMode }) {
   return (
     <Box
       sx={{
-        py: 3,
+        py: 4,
         position: "fixed",
         top: 0,
         left: 0,
         zIndex: 20,
         width: "100%",
         backgroundColor: scrolled ? theme.palette.primary.main : "transparent",
-        boxShadow: scrolled ? "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px" : "",
+        boxShadow: scrolled
+          ? theme.palette.mode === "dark"
+            ? "#fff 0px 1px 10px;"
+            : "rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+          : "",
       }}
       className="navbar"
     >
@@ -217,9 +221,6 @@ function Navbar({ setMode }) {
                     color: theme.palette.secondary.main,
                     fontSize: "18px",
                   }}
-                  onClick={() => {
-                    setToggle(!toggle);
-                  }}
                 >
                   <Link
                     href={navLink.id}
@@ -229,6 +230,7 @@ function Navbar({ setMode }) {
                     offset={-150}
                     duration={100}
                     style={{ cursor: "pointer" }}
+                    onClick={() => setToggle(!toggle)}
                   >
                     {t([`nav.${navLink.languageDescription}`])}
                   </Link>

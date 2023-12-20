@@ -12,11 +12,11 @@ function HeroSlide({ img, heading, body }) {
   return (
     <>
       <div className="slider-overlay"></div>
-      <img src={img} alt="hero img" />
+      <img loading={"lazy"} src={img} alt="hero img" />
       <Box
         sx={{
           position: "absolute",
-          top: "50%",
+          top: "60%",
           transform: "translateY(-50%)",
           right: i18n.language === "ar" ? 0 : "",
           left: i18n.language === "en" ? 0 : "",

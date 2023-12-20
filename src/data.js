@@ -98,7 +98,7 @@ export const bigScreenSlides = [
   {
     img: bigHeroImg2,
     heading: "مرحبا بكم فى شركة TREND 37",
-    languageDescription: "editing",
+    languageDescription: "designing",
   },
 
   {
@@ -114,7 +114,7 @@ export const bigScreenSlides = [
   {
     img: bigHeroImg5,
     heading: "مرحبا بكم فى شركة TREND 37",
-    languageDescription: "designing",
+    languageDescription: "editing",
   },
 ];
 
@@ -128,7 +128,7 @@ export const midScreenSlides = [
   {
     img: midHeroImg2,
     heading: "مرحبا بكم فى شركة TREND 37",
-    languageDescription: "editing",
+    languageDescription: "designing",
   },
 
   {
@@ -144,7 +144,7 @@ export const midScreenSlides = [
   {
     img: midHeroImg5,
     heading: "مرحبا بكم فى شركة TREND 37",
-    languageDescription: "designing",
+    languageDescription: "editing",
   },
 ];
 
@@ -158,7 +158,7 @@ export const smallScreenSlides = [
   {
     img: smallHeroImg2,
     heading: "مرحبا بكم فى شركة TREND 37",
-    languageDescription: "editing",
+    languageDescription: "designing",
   },
 
   {
@@ -174,7 +174,7 @@ export const smallScreenSlides = [
   {
     img: smallHeroImg5,
     heading: "مرحبا بكم فى شركة TREND 37",
-    languageDescription: "designing",
+    languageDescription: "editing",
   },
 ];
 
@@ -204,7 +204,7 @@ export const photography = [
     img: photographyImg6,
   },
   {
-    languageDescription: "programsPhotography",
+    languageDescription: "talkShowPhotography",
     img: photographyImg7,
   },
   {
@@ -223,7 +223,7 @@ export const printing = [
     img: printingImg2,
   },
   {
-    languageDescription: "personalCardsPrinting",
+    languageDescription: "businessCardsPrinting",
     img: printingImg3,
   },
 ];
@@ -298,17 +298,17 @@ export const partners = [
 export const achievements = [
   {
     languageDescription: "happyCustomer",
-    count: 20,
+    count: 1120,
     dataAosDelay: "0",
   },
   {
     languageDescription: "workTeam",
-    count: 10,
+    count: 15,
     dataAosDelay: "200",
   },
   {
     languageDescription: "completedProject",
-    count: 50,
+    count: 200,
     dataAosDelay: "400",
   },
 ];

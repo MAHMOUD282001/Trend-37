@@ -7,6 +7,8 @@ import {
   Instagram,
   LinkedIn,
   People,
+  Phone,
+  YouTube,
 } from "@mui/icons-material";
 import ContactLogic from "./ContactLogic";
 
@@ -104,6 +106,39 @@ function Contact() {
                   </Box>
                 </Box>
               </Box>
+              
+              <Box>
+                <Box
+                  sx={{ display: "flex", alignItems: "center", gap: 3, mt: 3 }}
+                >
+                  <Box>
+                    <Phone
+                      sx={{ fontSize: 30, color: theme.palette.fourtiary.main }}
+                    />
+                  </Box>
+                  <Box>
+                    <Typography
+                      variant="sectionSubText"
+                      sx={{ color: theme.palette.secondary.main }}
+                    >
+                      {t([`contact.companyPhones`])}
+                    </Typography>
+                    <Typography
+                      variant="sectionSubSubText"
+                      sx={{ color: theme.palette.secondary.main }}
+                    >
+                      01010610356 - 01015815302
+                    </Typography>
+                    
+                    <Typography
+                      variant="sectionSubSubText"
+                      sx={{ color: theme.palette.secondary.main }}
+                    >
+                      
+                    </Typography>
+                  </Box>
+                </Box>
+              </Box>
 
               <Box
                 sx={{
@@ -114,7 +149,7 @@ function Contact() {
                 }}
               >
                 <a
-                  href="https://www.facebook.com/growthhackers9"
+                  href="https://www.facebook.com/trendx37/"
                   aria-label="Facebook Link"
                 >
                   <Box
@@ -138,7 +173,7 @@ function Contact() {
                 </a>
 
                 <a
-                  href="https://www.instagram.com/growthhackers9/"
+                  href="https://www.instagram.com/trendx37/"
                   aria-label="Instagram Link"
                 >
                   <Box
@@ -162,7 +197,7 @@ function Contact() {
                 </a>
 
                 <a
-                  href="https://www.linkedin.com/company/growth-hackers9/"
+                  href="https://www.youtube.com/channel/UClzYSxhHAY7kBcve1k8zNJg"
                   aria-label="Linkedin Link"
                 >
                   <Box
@@ -176,7 +211,7 @@ function Contact() {
                       justifyContent: "center",
                     }}
                   >
-                    <LinkedIn
+                    <YouTube
                       sx={{
                         fontSize: "30px",
                         color: "#fff",

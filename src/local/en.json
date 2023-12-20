@@ -46,14 +46,14 @@
     "sessionsPhotography": "Sessions Photography",
     "coursesPhotography": "Courses Photography",
     "conferencePhotography": "Conference Photography",
-    "programsPhotography": "Programs Photography"
+    "talkShowPhotography": "Talk Show Photography"
   },
 
   "printing": {
     "printingHeadText": "Printing",
     "printingdiscText": "We provide all printing services",
     "flyersAndBrochuresPrinting": "Flyer and Brochure Printing",
-    "personalCardsPrinting": "Personal Cards Printing",
+    "businessCardsPrinting": "Business Cards Printing",
     "bannerPrinting": "Banner Printing"
   },
 
@@ -66,7 +66,7 @@
   },
 
   "editing": {
-    "editingHeadText": "Editing",
+    "editingHeadText": "Video Editing",
     "editingdiscText": "We provide all editing services",
     "advertisementEditing": "Advertisement Editing",
     "motionGraphics": "Motion graphics",
@@ -85,7 +85,7 @@
 
   "successPartners": {
     "successPartnersHeadText": "Success Partners",
-    "successPartnersdiscText": "All the partners of our successes"
+    "successPartnersdiscText": "Some of partners of our successes"
   },
 
   "acheivements": {
@@ -109,6 +109,7 @@
     "alwaysStayInTouch": "Always stay in touch with us",
     "companyName": "Company Name",
     "companyEmail": "Email",
+    "companyPhones": "Phone Numbers",
     "sendMsg": "Send your message",
     "name": "name",
     "msg": "message",
