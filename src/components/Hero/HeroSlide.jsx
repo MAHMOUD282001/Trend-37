@@ -12,7 +12,7 @@ function HeroSlide({ img, heading, body }) {
   return (
     <>
       <div className="slider-overlay"></div>
-      <img loading={"lazy"} src={img} alt="hero img" />
+      <img src={img} alt="hero img" />
       <Box
         sx={{
           position: "absolute",

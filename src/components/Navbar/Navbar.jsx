@@ -1,6 +1,6 @@
 import { Container, IconButton, Stack, useTheme } from "@mui/material";
 import { Box } from "@mui/material";
-import logo from "../../assets/logo-2.webp";
+import logo from "../../assets/logo.webp";
 import {
   Close,
   DarkModeOutlined,
@@ -92,7 +92,7 @@ function Navbar({ setMode }) {
                 </li>
               ))}
 
-              <Stack direction={"row"} style={{ marginLeft: "auto" }}>
+              <li style={{ marginLeft: "auto" }}>
                 {theme.palette.mode === "light" ? (
                   <IconButton
                     onClick={() => {
@@ -139,22 +139,24 @@ function Navbar({ setMode }) {
                     />
                   </IconButton>
                 )}
-              </Stack>
-            </ul>
+              </li>
 
-            <IconButton
-              onClick={handleLanguage}
-              sx={{
-                marginRight: lang === "ar" ? "20px" : 0,
-                marginLeft: lang === "en" ? "20px" : 0,
-              }}
-            >
-              <Language
-                sx={{
-                  color: scrolled ? theme.palette.secondary.main : "#fff",
-                }}
-              />
-            </IconButton>
+              <li>
+                <IconButton
+                  onClick={handleLanguage}
+                  sx={{
+                    marginRight: lang === "ar" ? "20px" : 0,
+                    marginLeft: lang === "en" ? "20px" : 0,
+                  }}
+                >
+                  <Language
+                    sx={{
+                      color: scrolled ? theme.palette.secondary.main : "#fff",
+                    }}
+                  />
+                </IconButton>
+              </li>
+            </ul>
           </Box>
 
           <Box
@@ -212,7 +214,7 @@ function Navbar({ setMode }) {
             }}
           >
             <ul
-              style={{ flexDirection: "column", alignItems: "center", gap: 2 }}
+              style={{ flexDirection: "column", alignItems: "center", gap: 5 }}
             >
               {navLinks.map((navLink) => (
                 <li
@@ -237,10 +239,9 @@ function Navbar({ setMode }) {
                 </li>
               ))}
 
-              <Stack direction={"row"}>
+              <li>
                 {theme.palette.mode === "light" ? (
                   <IconButton
-                    sx={{ color: theme.palette.secondary.main }}
                     onClick={() => {
                       localStorage.setItem(
                         "currentMode",
@@ -252,7 +253,9 @@ function Navbar({ setMode }) {
                     }}
                   >
                     <LightModeOutlined
-                      sx={{ color: theme.palette.secondary.main }}
+                      sx={{
+                        color: scrolled ? theme.palette.secondary.main : "#fff",
+                      }}
                     />
                   </IconButton>
                 ) : (
@@ -269,15 +272,25 @@ function Navbar({ setMode }) {
                     }}
                   >
                     <DarkModeOutlined
-                      sx={{ color: theme.palette.secondary.main }}
+                      sx={{
+                        color: scrolled ? theme.palette.secondary.main : "#fff",
+                      }}
                     />
                   </IconButton>
                 )}
-              </Stack>
+              </li>
 
-              <IconButton onClick={handleLanguage}>
-                <Language sx={{ color: theme.palette.secondary.main }} />
-              </IconButton>
+              <li>
+                <IconButton
+                  onClick={handleLanguage}
+                >
+                  <Language
+                    sx={{
+                      color: scrolled ? theme.palette.secondary.main : "#fff",
+                    }}
+                  />
+                </IconButton>
+              </li>
             </ul>
           </Box>
         </Box>
